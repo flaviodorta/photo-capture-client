@@ -5,3 +5,5 @@
 EX: NEXT_PUBLIC_SERVER_URL=http://192.168.15.148:4000
 
 - Executar o comando "npm run dev" no terminal
+
+📊 Para acessar o painel administrativo basta acessar a rota /panel
