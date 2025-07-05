@@ -44,7 +44,7 @@ const FrameScreen = ({
 
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_HOST_IP}/upload`,
+        `${process.env.NEXT_PUBLIC_SERVER_URL}/upload`,
         {
           method: 'POST',
           body: formData,

@@ -12,9 +12,7 @@ export default function Home() {
   const [step, setStep] = useState('initial');
   const [capturedImage, setCapturedImage] = useState<string | null>(null);
   const [downloadUrl, setDownloadUrl] = useState<string>('');
-  console.log('download url', downloadUrl);
 
-  // return <div></div>;
   switch (step) {
     case 'initial':
       return <InitialScreen onStart={() => setStep('spinner')} />;
