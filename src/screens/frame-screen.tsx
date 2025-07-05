@@ -52,7 +52,6 @@ const FrameScreen = ({
       );
 
       const data = await response.json();
-      console.log('Imagem enviada com sucesso:', data);
 
       setDownloadUrl(data.url);
       setShowQRCode(true);
