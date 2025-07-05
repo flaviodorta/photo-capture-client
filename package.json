@@ -18,7 +18,7 @@
     "qrcode.react": "^4.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-loader-spinner": "^6.1.6",
+    "react-spinners": "^0.17.0",
     "react-webcam": "^7.2.0",
     "tailwind-merge": "^3.3.1",
     "usehooks-ts": "^3.1.1"

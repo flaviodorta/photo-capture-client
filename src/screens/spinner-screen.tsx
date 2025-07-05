@@ -1,8 +1,14 @@
 import { useEffect, useState } from 'react';
-import { RotatingLines } from 'react-loader-spinner';
+import { FadeLoader } from 'react-spinners';
 
 type Props = {
   nextStep: () => void;
+};
+
+const override: React.CSSProperties = {
+  display: 'block',
+  margin: '0 auto',
+  borderColor: 'red',
 };
 
 const SpinnerScreen = ({ nextStep }: Props) => {
@@ -25,12 +31,12 @@ const SpinnerScreen = ({ nextStep }: Props) => {
       className='h-full w-full flex items-center justify-center'
       data-testid='spinner'
     >
-      <RotatingLines
-        strokeColor='grey'
-        strokeWidth='5'
-        animationDuration='0.75'
-        width='48'
-        visible={true}
+      <FadeLoader
+        color={'#8f8f8f'}
+        loading={true}
+        cssOverride={override}
+        aria-label='Loading Spinner'
+        data-testid='loader'
       />
     </div>
   );
